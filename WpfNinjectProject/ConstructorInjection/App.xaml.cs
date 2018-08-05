@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ConstructorInjection.Services;
+using ConstructorInjection.ViewModels;
+using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -15,6 +18,17 @@ namespace ConstructorInjection
     {
         private void App_Startup(object sender, StartupEventArgs e)
         {
+            IKernel kernel = new StandardKernel();
+            kernel.Bind<IDialogService>().To<DialogService>();
+            kernel.Bind<IDataService>().To<DataService>();
+
+            var appVM = kernel.Get<AppViewModel>();
+
+            MainWindow = new MainWindow();
+            MainWindow.DataContext = appVM;
+            MainWindow.Show();
+
+
             //--------------------------------------OPTION 1--------------------------------------
             //var dialogService = new DialogService();
             //var dataService = new DataService(dialogService);
