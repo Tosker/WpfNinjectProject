@@ -1,0 +1,13 @@
+﻿<Application x:Class="SetterInjection.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewmodels="clr-namespace:SetterInjection.ViewModels"
+             xmlns:views="clr-namespace:SetterInjection.Views"
+             xmlns:local="clr-namespace:SetterInjection"
+             Startup="App_Startup">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewmodels:DataViewModel}">
+            <views:DataView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
