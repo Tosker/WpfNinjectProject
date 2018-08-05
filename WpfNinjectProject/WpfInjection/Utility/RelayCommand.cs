@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace WpfInjection.Utility
@@ -12,7 +8,9 @@ namespace WpfInjection.Utility
         private readonly Action<T> _execute = null;
         private readonly Predicate<T> _canExecute = null;
 
-        public RelayCommand(Action<T> execute) : this(execute, null) { }
+        public RelayCommand(Action<T> execute) : this(execute, null)
+        {
+        }
 
         public RelayCommand(Action<T> execute, Predicate<T> canExecute)
         {

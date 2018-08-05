@@ -10,6 +10,7 @@ namespace WpfInjection.ViewModels
         public IDataService _dataService;
 
         private ObservableCollection<string> _dataCollection;
+
         public ObservableCollection<string> DataCollection
         {
             get { return _dataCollection; }

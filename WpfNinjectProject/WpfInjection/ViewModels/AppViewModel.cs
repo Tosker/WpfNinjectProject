@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WpfInjection.Utility;
+﻿using WpfInjection.Utility;
 
 namespace WpfInjection.ViewModels
 {
@@ -12,6 +7,7 @@ namespace WpfInjection.ViewModels
         private DataViewModel _dataVM;
 
         private object _current;
+
         public object Current
         {
             get { return _current; }
@@ -23,6 +19,5 @@ namespace WpfInjection.ViewModels
             _dataVM = dataVM;
             Current = _dataVM;
         }
-
     }
 }

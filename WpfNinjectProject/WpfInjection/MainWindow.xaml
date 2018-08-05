@@ -8,6 +8,6 @@
         DataContext="{Binding Path=AppViewModel, Source={StaticResource ServiceLocator}}"
         Title="Alternative Wpf Example" Height="450" Width="800">
     <Grid>
-        <ContentControl Content="{Binding Current}"/>
+        <ContentControl Content="{Binding Current}" />
     </Grid>
 </Window>

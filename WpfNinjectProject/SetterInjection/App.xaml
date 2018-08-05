@@ -7,7 +7,7 @@
              Startup="App_Startup">
     <Application.Resources>
         <DataTemplate DataType="{x:Type viewmodels:DataViewModel}">
-            <views:DataView/>
+            <views:DataView />
         </DataTemplate>
     </Application.Resources>
 </Application>

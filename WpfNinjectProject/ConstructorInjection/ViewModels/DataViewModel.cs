@@ -1,11 +1,6 @@
 ﻿using ConstructorInjection.Services;
 using ConstructorInjection.Utility;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace ConstructorInjection.ViewModels
@@ -15,6 +10,7 @@ namespace ConstructorInjection.ViewModels
         public IDataService _dataService;
 
         private ObservableCollection<string> _dataCollection;
+
         public ObservableCollection<string> DataCollection
         {
             get { return _dataCollection; }

@@ -7,11 +7,10 @@
              xmlns:ninject="clr-namespace:WpfInjection.Ninject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ninject:ServiceLocator x:Key="ServiceLocator"/>
-
+        <ninject:ServiceLocator x:Key="ServiceLocator" />
 
         <DataTemplate DataType="{x:Type viewmodels:DataViewModel}">
-            <views:DataView/>
+            <views:DataView />
         </DataTemplate>
     </Application.Resources>
 </Application>

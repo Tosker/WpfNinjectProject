@@ -1,12 +1,6 @@
 ﻿using ConstructorInjection.Services;
 using ConstructorInjection.ViewModels;
 using Ninject;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace ConstructorInjection
@@ -28,7 +22,6 @@ namespace ConstructorInjection
             MainWindow.DataContext = appVM;
             MainWindow.Show();
 
-
             //--------------------------------------OPTION 1--------------------------------------
             //var dialogService = new DialogService();
             //var dataService = new DataService(dialogService);
@@ -39,7 +32,6 @@ namespace ConstructorInjection
             //MainWindow.DataContext = appVM;
             //MainWindow.Show();
             //------------------------------------------------------------------------------------
-
 
             //--------------------------------------OPTION 2--------------------------------------
             //MainWindow = new MainWindow();

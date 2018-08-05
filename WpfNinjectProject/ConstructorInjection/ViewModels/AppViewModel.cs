@@ -1,9 +1,4 @@
 ﻿using ConstructorInjection.Utility;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConstructorInjection.ViewModels
 {
@@ -12,6 +7,7 @@ namespace ConstructorInjection.ViewModels
         private DataViewModel _dataVM;
 
         private object _current;
+
         public object Current
         {
             get { return _current; }
