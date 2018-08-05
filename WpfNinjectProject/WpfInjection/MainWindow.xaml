@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfInjection"
         mc:Ignorable="d"
+        DataContext="{Binding Path=AppViewModel, Source={StaticResource ServiceLocator}}"
         Title="Alternative Wpf Example" Height="450" Width="800">
     <Grid>
-        
+        <ContentControl Content="{Binding Current}"/>
     </Grid>
 </Window>

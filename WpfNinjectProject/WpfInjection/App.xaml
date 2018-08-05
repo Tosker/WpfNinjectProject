@@ -4,8 +4,12 @@
              xmlns:viewmodels="clr-namespace:WpfInjection.ViewModels"
              xmlns:views="clr-namespace:WpfInjection.Views"
              xmlns:local="clr-namespace:WpfInjection"
+             xmlns:ninject="clr-namespace:WpfInjection.Ninject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ninject:ServiceLocator x:Key="ServiceLocator"/>
+
+
         <DataTemplate DataType="{x:Type viewmodels:DataViewModel}">
             <views:DataView/>
         </DataTemplate>
